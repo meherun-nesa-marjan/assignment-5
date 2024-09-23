@@ -42,7 +42,12 @@ document.getElementById('donation-btn')
     
 })
 
-
+window.addEventListener('scroll',function(){
+    const header = document.querySelector('header')
+    header.classList.toggle("sticky",window.scrollY > 0)
+    const nav = document.getElementById('nav-btn')
+    nav.classList.add('backdrop-blur')
+})
 
 
 
@@ -77,7 +82,7 @@ document.getElementById('donate-btn')
         const div = document.createElement('div')
         div.classList.add("border", "mb-6", "border-slate-300" , "rounded-md" , "py-4", "px-2")
         div.innerHTML = `
-                 <h3 class="font-bold text-2xl"> ${addMoney} Taka is ${historyTittle} </h3>
+                 <h3 class="font-bold lg:text-2xl"> ${addMoney} Taka is ${historyTittle} </h3>
                  <p class="text-gray-400">${now} </p>
             `
         document.getElementById('history').appendChild(div)

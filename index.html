@@ -26,15 +26,15 @@
       </script>
 </head>
 <body>
-   <header id="navbar" class="overflow-hidden sticky z-50 top-0">
-    <nav class="bg-secondary  ">
+   <header id="navbar" class="overflow-hidden  w-full z-50 left-0 top-0">
+    <nav class="bg-secondary  relative">
         <div class="navbar lg:container lg:mx-auto lg:w-4/5 py-6 ">
-            <div class="navbar-start hidden lg:inline">
+            <div class="navbar-start ">
                 <button class="bg-primary py-3 px-8 rounded-xl font-semibold text-2xl"><a href="blog.html">Blog</a></button>
             </div>
             <div class="navbar-center">
                 <img src="./assets/logo.png" alt="">
-                <h1 class="mx-3 font-semibold text-2xl">Donate Bangladesh</h1>
+                <h1 class="mx-3 font-semibold hidden lg:inline text-2xl">Donate Bangladesh</h1>
              
             </div>
             <div class="navbar-end">
@@ -43,7 +43,7 @@
             </div>
           </div>
     </nav>
-    <div class="flex  mt-24 mx-auto w-1/5">
+    <div id="nav-btn" class="flex pt-24 mx-auto bg-transparent justify-center">
       <div><button id="donation-btn" class="bg-primary mr-3 py-3 px-8 rounded-xl font-semibold text-2xl">Donation</button></div>
       <div><button id="history-btn" class="border py-3 px-8 rounded-xl font-semibold text-2xl">History</button></div>
      </div>
@@ -68,8 +68,8 @@
           <img class="" src="./assets/noakhali.png" alt="Album" />
         </figure>
        </div>
-          <div class="card-body pt-0 lg:w-2/5">
-            <div class="flex w-fit">
+          <div class="card-body pt-0 w-full lg:w-2/5">
+            <div class="flex lg:mt-0 mt-10 w-fit">
               <img src="./assets/coin.png" alt=""> <p id="donate-balance" class="mx-2">20</p> <p>BDT</p>
             </div>
             
@@ -110,7 +110,7 @@
         </figure>
        </div>
           <div class="card-body pt-0 lg:w-2/5">
-            <div class="flex w-fit">
+            <div class="flex lg:mt-0 mt-10 w-fit">
               <img src="./assets/coin.png" alt=""> <p id="donate-balance-1" class="mx-2">200</p> <p>BDT</p>
             </div>
             
@@ -146,7 +146,7 @@
         </figure>
        </div>
           <div class="card-body pt-0 lg:w-2/5">
-            <div class="flex w-fit">
+            <div class="flex lg:mt-0 mt-10 w-fit">
               <img src="./assets/coin.png" alt=""> <p id="donate-balance-2" class="mx-2">200</p> <p>BDT</p>
             </div>
             
