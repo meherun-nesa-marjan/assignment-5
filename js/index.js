@@ -47,6 +47,8 @@ document.getElementById('donation-btn')
 
 
 
+
+
 document.getElementById('donate-btn')
 .addEventListener('click', function(event){
     event.preventDefault();
@@ -142,29 +144,29 @@ document.getElementById('donate-btn-2')
     const addMoneyNumber2 = parseFloat(addMoney2);
 
 
-    if (!isNaN(addMoney1) && !isNaN(parseFloat(addMoney1)) && parseFloat(addMoney1) > 0) {
-        const donateMoney1 = getTextFieldById('donate-balance-1');
+    if (!isNaN(addMoney2) && !isNaN(parseFloat(addMoney2)) && parseFloat(addMoney2) > 0) {
+        const donateMoney2 = getTextFieldById('donate-balance-2');
         const outMoney = getTextFieldById('out-money');
-        if(addMoneyNumber1> outMoney){
+        if(addMoneyNumber2> outMoney){
             alert('you Do not have enough money for donate');
-             document.getElementById('donate-money-1').value = ''
+             document.getElementById('donate-money-2').value = ''
             return;
         }
-        const newDonateBalace1 = addMoneyNumber1 + donateMoney1;
-        const myBalace1 = outMoney -addMoney1;
-        document.getElementById('donate-balance-1').innerText = newDonateBalace1
-        document.getElementById('out-money').innerText=myBalace1
-        document.getElementById('donate-money-1').value = ''
-        const now1 = new Date();
+        const newDonateBalace2 = addMoneyNumber2 + donateMoney2;
+        const myBalace2 = outMoney -addMoney2;
+        document.getElementById('donate-balance-2').innerText = newDonateBalace2
+        document.getElementById('out-money').innerText=myBalace2
+        document.getElementById('donate-money-2').value = ''
+        const now2 = new Date();
 
         const div = document.createElement('div')
         div.classList.add("border", "mb-6", "border-slate-300" , "rounded-md" , "py-4", "px-2")
         div.innerHTML = `
-                 <h3 class="font-bold text-2xl"> ${addMoney1} Taka is ${historyTittle1} </h3>
-                 <p class="text-gray-400">${now1} </p>
+                 <h3 class="font-bold text-2xl"> ${addMoney2} Taka is ${historyTittle2} </h3>
+                 <p class="text-gray-400">${now2} </p>
             `
         document.getElementById('history').appendChild(div)
-        document.getElementById('my_modal_2').showModal()
+        document.getElementById('my_modal_3').showModal()
       }
    else{
     alert('Failed to Donate Money. ')
