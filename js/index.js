@@ -1,3 +1,6 @@
+//common function
+
+
 function getInputFieldById(id){
     const inputValue =document.getElementById(id).innerText;
     const inputNumber = parseFloat(inputValue);
@@ -22,6 +25,8 @@ function showSection(id){
 }
 
 
+//btn function
+
 document.getElementById('history-btn')
 .addEventListener('click', function(){
     document.getElementById('donation-btn').classList.remove('bg-primary')
@@ -45,15 +50,16 @@ document.getElementById('donation-btn')
 window.addEventListener('scroll',function(){
     const header = document.querySelector('header')
     header.classList.toggle("sticky",window.scrollY > 0)
-    const nav = document.getElementById('nav-btn')
-    nav.classList.add('backdrop-blur')
+    header.classList.add('backdrop-blur','backdrop-filter')
+ 
+   
 })
 
 
 
 
 
-
+// main function
 document.getElementById('donate-btn')
 .addEventListener('click', function(event){
     event.preventDefault();
